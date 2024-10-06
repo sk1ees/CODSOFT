@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.firstSection {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(1, 100px 1.5fr 1fr);
+  background: radial-gradient(rgba(255, 0, 0, 0), black),
+    url("https://img.freepik.com/premium-vector/blank-blue-sheet-paper-with-grid-vector-blueprint-background-template-grid-vector-background-vector-illustration_561158-4133.jpg");
+  color: white;
+}
+nav {
+  width: 75%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr 2fr 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.navMiddle {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  gap: 2rem;
+}
+.navRight {
+  display: flex;
+  justify-content: end;
+}
+.navRight button {
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-right: 2vh;
+}
+
+.firstSectionCenter {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.firstSectionCenter h1 {
+  font-size: 7vh;
+}
+.firstSectionCenter button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.firstSectionEnd {
+  width: 75%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8vh;
+}
+
+.firstSectionEnd .box {
+  display: flex;
+  gap: 1vh;
+  padding: 10% 10%;
+  flex-direction: column;
+  justify-content: center;
+  height: 20vh;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.282);
+
+  border-radius: 10px;
+}
+.firstSectionEnd .box small {
+  font-size: small;
+  color: rgb(219, 219, 219);
+}
+.firstSectionEnd .box h1 {
+  font-size: x-large;
+}
+.secondSection {
+  width: 100%;
+  height: 40vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondSection h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+.secondSection p {
+  color: gray;
+}
+
+.thirdSection {
+  width: 85%;
+  height: 147vh;
+  margin: auto;
+  background-color: white;
+  padding-bottom: 10vh;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.thirdSection .gridBox {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr 100px);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.firstGrid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.secondGrid{
+  width: 75%;
+  margin: auto;
+  height: 100%;
+}
+.secondGrid h1{
+  font-weight: 600;
+}
+.secondGrid p {
+  color: rgb(71, 71, 71);
+}
+.firstGrid img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+}
+.gridColor1 {
+  background-color: rgb(228, 255, 255);
+}
+.gridColor2 {
+  background-color: rgb(248, 228, 255);
+}
+.gridColor3 {
+  background-color: rgb(239, 255, 228);
+}
+.gridColor4 {
+  background-color: rgb(255, 253, 228);
+}
+
+.fourthSection {
+  width: 75%;
+  margin: auto;
+  height: 70vh;
+  gap: 5vh;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.fourthSec1 h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.fourthSec2 {
+  height: 50%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(1, 2fr 1fr);
+}
+.fourthMiniSec2 {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  grid-template-rows: repeat(2, 1fr);
+}
+.fourthMiniSec2 h1 {
+  font-size: 3rem;
+}
+.fourthSec3 {
+  display: flex;
+  gap: 5vh;
+}
+.company {
+  width: 100%;
+  height: 100px;
+
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 3vh;
+  color: rgb(89, 89, 89);
+}
+.company img {
+ 
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 50%;
+}
+.fifthSection {
+  width: 75%;
+  height: 90vh;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+.fifthSec2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: 55%;
+
+  gap: 5vh;
+}
+.fifthSec1 h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.boxesHeadline{
+  padding: 20px 0px;
+}
+.boxesHeadline h1 {
+  font-size: 20px;
+}
+.boxesHeadline p {
+  color: gray;
+}
+.boxes img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.sixthSection {
+  width: 100%;
+  height: 60vh;
+  background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.711)),
+    url("https://img.freepik.com/premium-vector/blank-blue-sheet-paper-with-grid-vector-blueprint-background-template-grid-vector-background-vector-illustration_561158-4133.jpg");
+}
+.sectionDiv {
+  width: 75%;
+  height: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.sixthFirst {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: left;
+}
+.sixthSecond {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sixthSecond .box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cont h1 {
+  font-size: 4vh;
+  font-weight: 500;
+}
+.sixthFirst .cont {
+  flex-direction: column;
+  display: flex;
+  gap: 4vh;
+}
+.cont button {
+  width: 50%;
+  padding: 15px 15px;
+  border-radius: 10px;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.seventhSection {
+  width: 75%;
+  margin: auto;
+  height: 50vh;
+
+  display: grid;
+  grid-template-columns: repeat(1, 350px 1fr);
+}
+.firstSeventh {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.firstSeventh small {
+  font-size: 15px;
+
+}
+.firstSeventh .cont{
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+.secondSeventh {
+  color: black;
+  display: flex;
+  gap: 10vh;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.footerContent li:first-child {
+  font-weight: bold;
+}
+
+.firstBtn {
+  background-color: cyan;
+  font-weight: 500;
+}
+.secondBtn {
+  background: transparent;
+  border: 2px solid cyan;
+  color: cyan;
+}
+
+.navBtn1 {
+  background: transparent;
+  color: white;
+}
+footer{
+  text-align: center;
+  width: 100%;
+  height: 10vh;
+}
