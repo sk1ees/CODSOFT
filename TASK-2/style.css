@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #efeeed;
+  
+  scroll-behavior: smooth;
+}
+
+.root {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  padding: 20px 0px;
+}
+
+.headerSection {
+  width: 100%;
+  height: 100vh;
+}
+
+nav {
+  width: 100%;
+  height: 70px;
+}
+.navContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+.navContainer .left {
+  display: flex;
+  align-items: center;
+  gap: 2vh;
+}
+.navContainer .left button {
+  padding: 10px 20px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+.navContainer .right {
+  display: flex;
+  gap: 1vh;
+}
+.right small {
+  cursor: pointer;
+}
+.right small {
+  position: relative;
+}
+
+.right small::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: transparent;
+  transition: width 300ms ease;
+}
+
+.right small:hover::after {
+  width: 100%;
+  background-color: #000000;
+  transition: width 300ms ease;
+}
+
+.headerContainer {
+  width: 80%;
+  margin: auto;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.aboutSection {
+  width: 100%;
+  height: 66vh;
+  scroll-margin-top: 100px; 
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+.aboutSection .aboutme {
+  width: 50%;
+  font-size: 1.5vw;
+  text-align: justify;
+}
+.skillsSection {
+  width: 100%;
+  height: 100vh;
+
+  display: grid;
+  padding: 10px 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.skillContainer {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.projectSection {
+  width: 100%;
+  height: 40vh;
+
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  gap: 4vh;
+}
+
+.profile {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.profileBox {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  border-radius: 100%;
+  border: 6px solid white;
+  position: absolute;
+}
+.nameBox {
+  width: 140px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: white;
+  position: relative;
+  /* right: -14px; */
+  display: flex;
+  font-size: smaller;
+  align-items: center;
+  justify-content: center;
+  top: 55px;
+  left: 66%;
+  transform: rotate(-6deg);
+}
+.profileBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.nameBrief {
+  width: 100%;
+  height: 280px;
+
+  display: flex;
+  flex-direction: column;
+}
+.desc {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+}
+.nameContainer {
+  width: 40%;
+  margin: auto;
+  height: 100px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.githubLink {
+  width: 30%;
+  margin: auto;
+  height: 50px;
+  border-radius: 50px;
+  background-color: rgb(220, 220, 220);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  color: black;
+}
+.nameContainer h1 {
+  font-size: 50px;
+}
+
+.aboutme .span {
+  position: relative;
+  cursor: pointer;
+}
+
+.aboutme .span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: transparent;
+  transition: width 300ms ease;
+}
+
+.aboutme .span:hover::after {
+  width: 100%;
+  background-color: #000000;
+  transition: width 300ms ease;
+}
+
+.aboutDiv {
+  display: flex;
+  gap: 5vh;
+}
+.workExp {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  width: 50%;
+}
+.workGrid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headline {
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+  justify-content: left;
+}
+.greenBox {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: rgb(0, 193, 0);
+  border: 4px solid rgb(186, 255, 82);
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5vh;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.tags {
+  padding: 10px 0px;
+  display: flex;
+  gap: 3vh;
+  font-size: smaller;
+  list-style-type: none;
+}
+.proj {
+  width: 100%;
+  height: 100%;
+  padding: 10px 30px;
+  background-color: #e1e1e1;
+  display: flex;
+  flex-direction: column;
+}
+.proj h1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.proj h1 span {
+  font-size: 2rem;
+}
+.proj h1 span:hover {
+  transform: rotate(45deg);
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.proj small {
+  color: gray;
+}
+.contactSection {
+  width: 100%;
+  height: 20vh;
+}
+.seeall {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactSection {
+  text-align: center;
+}
+
+.contactSection .container {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.contactBtn .left button {
+  padding: 10px 30px;
+  margin-right: 10px;
+  outline: none;
+  border-radius: 50px;
+  border: none;
+  background-color: #e1e1e1;
+}
+.skillDesc {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+.secondHalf {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+.skillsHeadline {
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+}
+.firstHalf {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill li {
+  padding: 10px 30px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 50px;
+  list-style-type: none;
+}
+.skill ul {
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vh;
+  justify-content: flex-end;
+}
